@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Godwin C</title>
+</head>
+<body>
+<div class="container">
+<div class="row">
+
+<div id="lt-pane" class="col-md-3">
+<div class="row">
+<div id="profile-wrapper" class="col-md-12">
+<div class="row">
+    <img id="profile-image"src="images/2IMG_8245.jpg" alt="Godwin C">
+</div>
+</div>
+<span class="alert alert-info">Godwin C</span>
+</div>
+<hr />
+<div class="row">
+<label>Name :</label> Godwin C<br />
+<label>E-mail :</label>godwinj.psg@gmail.com<br />
+<label for="">Phone:</label>+919362683194<br />
+</div>
+
+<div class="row rm">
+
+<div class="col-md-12 alert alert-info"><h4>More Information</h4></div>
+<div id="drm" class="col-md-12">
+<h4>Click on colums with <img src="images/read.png" height="20px" toggle="Churchms"> to display here.</h4>
+</div>
+</div>
+</div>
+
+<div id="rt-pane" class="col-md-9">
+
+<div class="row">
+<div class="col-md-12">
+<div class="row sect-head">
+<div class="col-md-12 alert alert-info"><h4>Educational Qualifications</h4></div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<table class="table table-responsive">
+<thead class=""><th>Degree</th><th>Institution</th></thead>
+<tbody>
+<tr><td>M.Sc(Software Systems)</td><td>PSG College of Arts and Science.</td></tr>
+<tr><td>XII</td><td>Laurel Mat. Hr. Sec. School</td></tr>
+<tr><td>X</td><td>Lisieux Mat. Hr. Sec. School</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row sect-head">
+<div class="col-md-12 alert alert-info"><h4>Technologies Known</h4></div>
+</div>
+
+<div class="row">
+<div class="col-md-12">
+<table class="table table-responsive">
+<thead class=""><th>Web</th><th>Technologies</th></thead>
+<tbody>
+<tr><td><img src="images/web.png" height="70px;">Web</td><td><img src="images/html.jpg" alt="HTML" height="60px"><img src="images/css.jpg" alt="CSS" height="60px"><img src="images/JS.jpg" alt="Java Script" height="60px"> <img src="images/jquery.png" alt="jQuery" height="60px"> <img src="images/ajax.jpg" alt="Ajax" height="60px"> <img src="images/bootstrap.jpg" alt="Bootstrap" height="60px"></td><!--<td>HTML, CSS,Java Script, jQuery, Ajax.</td>--></tr>
+<tr><td><img src="images/middleware.png" height="70px;">Middle ware</td><td><img src="images/php.png" alt="PHP" height="60px"> <img src="images/asp.png" alt="ASP.NET" height="60px"> <img src="images/node.png" alt="Node.js" height="60px"> <img src="images/servlets.png" alt="JSP Servlets" height="60px"></td><!--<td>PHP, ASP.NET,Node.js,JSP (Servlet). </td>--></tr>
+<tr><td><img src="images/db.jpg" height="70px;">Databases</td><td><img src="images/access.jpg" alt="MS Access" height="60px"><img src="images/sqlexp.png" alt="MS SQL SERVER Express" height="60px"><img src="images/mysql.png" alt="My SQL" height="60px"><img src="images/mongo.png" alt="Mongo DB" height="60px"></td><!--<td>MS Access, MS SQL SERVER Express, My SQL, Mongo db.</td>--></tr>
+<tr><td><img src="images/desk.png" height="70px;">Desktop</td><td><img src="images/vb.jpg" alt="VB.NET" height="60px"><img src="images/java.jpg" alt="Java" height="60px"><img src="images/electron.png" alt="Elecrton.js" height="60px"></td><!--<td>MS Access, MS SQL SERVER Express, My SQL, Mongo db.</td>--></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="row sect-head">
+<div class="col-md-12 alert alert-info"><h4>Projects Done</h4></div>
+</div>
+
+<div class="row">
+<div class="col-md-12">
+<table class="table table-responsive">
+<thead class=""><th>Project Title</th><th>Description</th><th>Technologies</th></thead>
+<tbody>
+<tr><td><img class="readmore" src="images/read.png" height="20px" toggle="Churchms"> Church Manipulation System</td><td>Digital transformation in Church.</td><td>VB.NET, MS Access.</td></tr>
+<tr><td><img class="readmore" src="images/read.png" height="20px" toggle="rr"> Remote Review</td><td>Review production line machines from anywhere.</td><td>Node.js, Mogo db, AWS S3</td></tr>
+<tr><td><img class="readmore" src="images/read.png" height="20px" toggle="nv"> Nutrival</td><td>Nutritive values and daily calorie tracker.</td><td>Electron.js</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+<script src="script/jquery-1.12.4.js"></script>
+<script>
+$(document).ready(function(){
+$('.readmore').click(function(){
+var toggle=$(this).attr('toggle');
+alert(toggle);
+if(toggle=='Churchms'){
+    $('#drm').html("");
+    $('#drm').html("The following project was developed for St Joseph’s Church , Kavundampalayam.<br/>a. Project Name: Church Manipulation System<br/>b. Project Duration: 4 months <br/>c. Environment: .Net 4.6, OLEDB 12.0 <br /> d. Similar projects : 4");
+    
+}
+else if(toggle=='rr'){
+    $('#drm').html("");
+    $('#drm').html("The following project was developed for Unilogic Technologies <br />a. Project Name: Remote machine review(Creating Web UI for report analysis)<br />b. Project Duration: 8 months<br />c. Type: Web i. Front end: HTML, CSS, JS, jQuery, Bootstrap.<br /> ii. Server Side: Node.js <br />iii.Backend: Mongo DB<br />iv. Storage: AWS <br />Kindly Note: This has a module which is a tool to <br />build Web Pages and embed logic according <br />to different machines (Different types of<br /> charts, graphs, etc…). ");
+}
+else{
+    $('#drm').html("");
+    $('#drm').html(" This project is build on behalf of <br />Nutrition Department(PSGCAS) and is developed <br />for the students and researchers of <br />the department , PSG Hospitals, etc.<br />a. Project Name: Nutrival<br />b. Project Duration:-In progress…<br />c. Environment:Desktop: .Net 2.6(VB), OLEDB 12.0 and Electron.js.<br />Web: PHP, MYSQL. ");
+}
+$('#drm').css("text-align","left");
+});
+});
+</script>
+</body>
+</html>

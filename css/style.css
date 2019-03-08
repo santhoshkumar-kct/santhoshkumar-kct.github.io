@@ -1,0 +1,17 @@
+#profile-image{
+height:180px;
+border-radius:120px;
+}
+
+#lt-pane{
+text-align:center;
+border:2px solid #41aaea;
+border-radius:5px;
+}
+#rt-pane{
+border:2px solid #41aaea;
+border-radius:5px;
+}
+#profile-wrapper{
+border-radius:100px;
+}
